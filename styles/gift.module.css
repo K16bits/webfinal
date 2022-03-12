@@ -1,0 +1,38 @@
+.box{
+  height: 60px;
+  width: 90px;
+  background: #59842D;
+}
+
+.coverBox{
+  background: #78AF3E;
+  width: 100px;
+  height: 25px;
+}
+
+.container{
+  display: flex;
+  align-items: flex-end;
+  margin-left: 26%;
+}
+
+.containerGift{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lineHorizontal{ 
+  position: absolute;
+  width: 90px;
+  height: 15px;
+  margin-top: 50px;
+  background-color: #E80A18;
+}
+
+.lineVertical{ 
+  position: absolute;
+  width: 15px;
+  height: 85px;
+  background-color: #E80A18;
+}
