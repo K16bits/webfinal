@@ -1,4 +1,3 @@
-import { useState } from "react";
 import style from '../styles/door.module.css'
 import Gift from "./gift";
 

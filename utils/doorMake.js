@@ -14,7 +14,6 @@ export function updateDoors(objs, newObj){
       if (sameDoor) {
         return newObj
       } else {
-        // Se já abriu a porta modificada, não desselecione as demais portas
         return newObj.openDoor ? obj : obj.Markoff()
       }
     })
