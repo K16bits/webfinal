@@ -7,8 +7,8 @@ export default function Door(props){
     const css = door.select && !door.openDoor ? style.doorAtive : ''
 
 
-    const alternarSelecao = e => props.onChange(door.toggleSelection())
-    const abrir = e => {
+    const toggleselection = e => props.onChange(door.toggleSelection())
+    const openDoor = e => {
         e.stopPropagation()
         props.onChange(door.open())
     }
@@ -18,14 +18,14 @@ export default function Door(props){
                 <div className={style.door}>
                     <h1 className={
                         door.select ? style.numberAtive : style.numberDefault
-                    }>{door.id}</h1>
-                    <div className={style.ball} onClick={abrir}></div>
+                    }>{door.id+1}</h1>
+                    <div className={style.ball} onClick={openDoor}></div>
                 </div>
         )}
 
     return(
         //inicio da porta
-        <div onClick={alternarSelecao}>
+        <div onClick={toggleselection}>
             <div className={`${style.shapeDoor} ${css}`} >
                 {door.close? renderDoor(): door.Hasgift ? (<Gift/>):false}
             </div>

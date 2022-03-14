@@ -20,7 +20,8 @@ export default function Game(){
             {/* <h2>nPORTAS: {portas} Local:{local}</h2> */}
             <div className={styles.containerMain}>
             <div className={styles.containerDoor}>
-                {
+                {local > portas ? <h4 className={styles.invalid}>Valores inválidos</h4>
+                :
                     objDoors.map((obj)=>(
                         <Door key={obj.id} value={obj}
                         onChange={newDoor => setObjDoors(

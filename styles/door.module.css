@@ -77,3 +77,8 @@ height: 360px; */
   background-color: #BF2233; 
   cursor: pointer;
 }
+
+.invalid{
+  color: white;
+  font-size: 30px;
+}
